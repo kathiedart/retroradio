@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+    <head>
+        <title>RetroRadio</title>
+        <link rel="stylesheet" type="text/css" href="/css/index.css"/>
+    </head>
+    <body>
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <h1>RetroRadio</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label>
+                                    Server
+                                    <input id="server" type="text" class="form-control" placeholder="localhost"/>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-12">
+                                <input id="volume" type="range"/>
+                                <input id="squelch" type="range"/>
+                                <input id="frequency" type="text" class="input-lg form-control"/>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <h2>Mode</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li class="active"><a href="#">USB</a></li>
+                                    <li><a href="#">LSB</a></li>
+                                    <li><a href="#">RTTY</a></li>
+                                    <li><a href="#">CW</a></li>
+                                    <li><a href="#">AM</a></li>
+                                    <li><a href="#">FM</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-xs-12">
+                                <canvas id="scope"></canvas>
+                                <ul class="nav nav-tabs">
+                                    <li class="active"><a href="#">Waterfall</a></li>
+                                    <li><a href="#">Scope</a></li>
+                                    <li><a href="#">Visualisation</a></li>
+                                </ul>
+                                <ul class="nav nav-pills">
+                                    <li class="active"><a href="#">Save</a></li>
+                                    <li><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                </ul>
+                                <div class="btn-group">
+                                    <a href="#"><i class="fa fa-circle"></i></a>
+                                    <a href="#"><i class="fa fa-play"></i></a>
+                                </div>
+                                <br/>
+                                <div class="btn-group">
+                                    <a class="btn btn-default" href="#">CQ</a>
+                                    <a class="btn btn-default" href="#">ANS</a>
+                                    <a class="btn btn-default" href="#">TEST</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 col-xs-12">
+                                <h2>Digimode</h2>
+                                <ul class="nav nav-pills nav-stacked">
+                                    <li class="active"><a href="#">Analogue</a></li>
+                                    <li><a href="#">CW</a></li>
+                                    <li><a href="#">RTTY</a></li>
+                                    <li><a href="#">PSK</a></li>
+                                    <li><a href="#">FSK</a></li>
+                                    <li><a href="#">DV</a></li>
+                                    <li><a href="#">Hell</a></li>
+                                    <li><a href="#">Olivia</a></li>
+                                    <li><a href="#">Fax</a></li>
+                                    <li><a href="#">JT9</a></li>
+                                    <li><a href="#">JT65</a></li>
+                                    <li><a href="#">SSTV</a></li>
+                                    <li><a href="#">DSSTV</a></li>
+                                    <li><a href="#">DATV</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <textarea id="input"></textarea>
+                                <canvas id="canvas-input"></canvas>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8">
+                                <textarea id="output"></textarea>
+                                <canvas id="canvas-output"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="/js/index.js"></script>
+    </body>
+</html>
