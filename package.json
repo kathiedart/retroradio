@@ -1,0 +1,52 @@
+{
+  "name": "retroradio",
+  "version": "0.0.0",
+  "description": "RetroRadio",
+  "main": "index.js",
+  "scripts": {
+    "copy-css-bs": "cp -r node_modules/bootstrap/dist/css/* public/external/css/",
+    "copy-css-fa": "cp -r node_modules/font-awesome/css/* public/external/css/",
+    "copy-css": "npm run copy-css-bs & npm run copy-css-fa",
+    "copy-fonts-bs": "cp -r node_modules/bootstrap/dist/fonts/* public/external/fonts/",
+    "copy-fonts-fa": "cp -r node_modules/font-awesome/fonts/* public/external/fonts/",
+    "copy-fonts": "npm run copy-fonts-bs & npm run copy-fonts-fa",
+    "copy": "npm run copy-css & npm run copy-fonts",
+    "build-css": "cat public/css/src/* > public/css/index.css",
+    "build-js-public": "babel -o public/js/index.js public/js/src/*.js",
+    "build-js-server": "babel -d app src",
+    "watch-js-public": "babel -w -o public/js/index.js public/js/src/*.js",
+    "watch-js-server": "babel -w -d app src",
+    "build": "npm run copy & npm run build-css & npm run build-js-server & npm run build-js-public",
+    "watch": "npm run watch-js-server & npm run watch-js-public",
+    "start-server": "babel-node app/index.js",
+    "start": "npm run build && npm run watch & npm run start-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kathiedart/retroradio.git"
+  },
+  "keywords": [
+    "retro",
+    "radio"
+  ],
+  "author": "Kathie Dart <npm@kathiedart.uk>",
+  "license": "AGPL-3.0",
+  "bugs": {
+    "url": "https://github.com/kathiedart/retroradio/issues"
+  },
+  "homepage": "https://github.com/kathiedart/retroradio#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.1",
+    "font-awesome": "^4.7.0",
+    "hamlibjs": "^2.2.0",
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.22.2",
+    "babel-core": "^6.22.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.22.0",
+    "babel-preset-stage-0": "^6.22.0"
+  }
+}
