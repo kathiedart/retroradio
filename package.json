@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/kathiedart/retroradio#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^4.0.0",
     "express": "^4.14.1",
     "font-awesome": "^4.7.0",
     "hamlibjs": "^2.2.0",
