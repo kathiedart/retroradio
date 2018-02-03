@@ -26,18 +26,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kathiedart/retroradio.git"
+    "url": "git+https://github.com/danwdart/retroradio.git"
   },
   "keywords": [
     "retro",
     "radio"
   ],
-  "author": "Kathie Dart <npm@kathiedart.uk>",
+  "author": "Dan Dart <npm@dandart.co.uk>",
   "license": "AGPL-3.0",
   "bugs": {
-    "url": "https://github.com/kathiedart/retroradio/issues"
+    "url": "https://github.com/danwdart/retroradio/issues"
   },
-  "homepage": "https://github.com/kathiedart/retroradio#readme",
+  "homepage": "https://github.com/danwdart/retroradio#readme",
   "dependencies": {
     "bootstrap": "^4.0.0",
     "express": "^4.16.2",
