@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.7.1
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -10,3 +10,18 @@ patch:
         patched: '2017-05-25T03:56:02.514Z'
     - socket.io > socket.io-adapter > debug > ms:
         patched: '2017-05-25T03:56:02.514Z'
+  SNYK-JS-LODASH-567746:
+    - '@babel/node > lodash':
+        patched: '2020-04-30T21:22:27.160Z'
+    - '@babel/plugin-transform-modules-commonjs > @babel/helper-module-transforms > lodash':
+        patched: '2020-04-30T21:22:27.160Z'
+    - '@babel/core > @babel/helpers > @babel/traverse > lodash':
+        patched: '2020-04-30T21:22:27.160Z'
+    - '@babel/plugin-transform-modules-commonjs > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > lodash':
+        patched: '2020-04-30T21:22:27.160Z'
+    - '@babel/plugin-transform-modules-commonjs > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/generator > lodash':
+        patched: '2020-04-30T21:22:27.160Z'
+    - '@babel/plugin-transform-modules-commonjs > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2020-04-30T21:22:27.160Z'
+    - '@babel/plugin-transform-modules-commonjs > @babel/helper-module-transforms > @babel/helper-replace-supers > @babel/traverse > @babel/helper-function-name > @babel/helper-get-function-arity > @babel/types > lodash':
+        patched: '2020-04-30T21:22:27.160Z'
