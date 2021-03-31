@@ -44,7 +44,7 @@
     "font-awesome": "^4.7.0",
     "hamlibjs": "^2.2.0",
     "jquery": "^3.5.1",
-    "snyk": "^1.465.0",
+    "snyk": "^1.518.0",
     "socket.io": "^3.0.4",
     "socket.io-client": "^3.0.4"
   },
